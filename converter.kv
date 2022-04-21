@@ -1,0 +1,38 @@
+CurrencyConverterWidget:
+<CurrencyConverterWidget>:
+    canvas.before:
+        Color:
+            rgba : 0.6,0.8,1,1
+        Rectangle:
+            size : self.size
+            pos: self.pos
+    orientation : 'vertical'
+    Label:
+        text: "Currency converter"
+        font_name : 'assets/fonts/ShortBaby-Mg2w.ttf'
+        font_size: dp(30)
+        color : 0,0,0
+        background_color: (0,179/255,60/255,.85)
+        canvas.before:
+            Color:
+                rgba: self.background_color
+            Rectangle:
+                size: self.size
+                pos: self.pos
+    Label:
+        text : root.current_date
+        font_name : 'assets/fonts/ShortBaby-Mg2w.ttf'
+        font_size: dp(25)
+        color : 0,0,0
+    BoxLayout:
+        Label:
+            text : 'FROM'
+            font_name : 'assets/fonts/ShortBaby-Mg2w.ttf'
+            font_size: dp(25)
+            color : 0,0,0
+        Label:
+        Label:
+            text : 'TO'
+            font_size: dp(25)
+            color : 0,0,0
+            font_name : 'assets/fonts/ShortBaby-Mg2w.ttf'
